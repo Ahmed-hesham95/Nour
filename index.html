@@ -11,173 +11,278 @@
 </head>
 
 <body>
-    <!-- شريط التنقل -->
+    <!-- الشريط العلوي -->
     <header>
-        <nav>
-            <div class="logo">إكسسواراتك</div>
+        <div class="container header-content">
+            <div class="logo">إكسسوارات</div>
 
-            <ul class="nav-links">
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">المجموعات</a></li>
-                <li><a href="#">أساور</a></li>
-                <li><a href="#">أقراط</a></li>
-                <li><a href="#">قلادات</a></li>
-                <li><a href="#">عروض خاصة</a></li>
-            </ul>
-
-            <div class="nav-icons">
-                <a href="#"><i class="fas fa-search"></i></a>
-                <a href="#"><i class="fas fa-user"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-
-            <div class="hamburger">
+            <button class="nav-toggle">
                 <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-    </header>
+            </button>
 
-    <!-- قائمة الهاتف الجانبية -->
-    <div class="mobile-menu">
-        <div class="close-menu">
-            <i class="fas fa-times"></i>
-        </div>
-        <ul class="mobile-links">
-            <li><a href="#">الرئيسية</a></li>
-            <li><a href="#">المجموعات</a></li>
-            <li><a href="#">أساور</a></li>
-            <li><a href="#">أقراط</a></li>
-            <li><a href="#">قلادات</a></li>
-            <li><a href="#">عروض خاصة</a></li>
-        </ul>
-    </div>
-    <div class="overlay"></div>
-
-    <!-- قسم الهيرو -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>اكتشفي جمالك مع إكسسواراتنا المميزة</h2>
-            <p>مجموعة فريدة من الإكسسوارات التي تُبرز أناقتك في كل مناسبة</p>
-            <button class="cta-button">تسوق الآن</button>
-        </div>
-    </section>
-
-    <!-- قسم الفئات -->
-    <section class="categories">
-        <h2>تسوق حسب الفئة</h2>
-        <div class="category-grid">
-            <div class="category-item">
-                <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                    alt="أساور">
-                <h3>أساور</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://images.unsplash.com/photo-1606760227094-54d4c5a41e2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                    alt="أقراط">
-                <h3>أقراط</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://images.unsplash.com/photo-1596944946758-64b6fdea844d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                    alt="قلادات">
-                <h3>قلادات</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                    alt="خواتم">
-                <h3>خواتم</h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- المنتجات المميزة -->
-    <section class="featured-products">
-        <h2>منتجاتنا المميزة</h2>
-        <div class="products-grid">
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ad5e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                    alt="سوار من الذهب الوردي">
-                <div class="product-info">
-                    <h3>سوار من الذهب الوردي</h3>
-                    <p>120 ر.س</p>
-                    <button>أضف إلى السلة</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                    alt="أقراط لؤلؤ">
-                <div class="product-info">
-                    <h3>أقراط لؤلؤ</h3>
-                    <p>95 ر.س</p>
-                    <button>أضف إلى السلة</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                    alt="قلادة الماس">
-                <div class="product-info">
-                    <h3>قلادة الماس</h3>
-                    <p>200 ر.س</p>
-                    <button>أضف إلى السلة</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1594576722512-582d5570a97d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                    alt="خاتم زمرد">
-                <div class="product-info">
-                    <h3>خاتم زمرد</h3>
-                    <p>150 ر.س</p>
-                    <button>أضف إلى السلة</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- قسم العروض الخاصة -->
-    <section class="special-offers">
-        <div class="offer-banner">
-            <h2>خصم يصل إلى 30% على المجموعة الجديدة</h2>
-            <p>عرض لفترة محدودة</p>
-            <button>استفيدي من العرض</button>
-        </div>
-    </section>
-
-    <!-- النشرة البريدية -->
-    <section class="newsletter">
-        <h2>اشتركي في نشرتنا البريدية</h2>
-        <p>كوني أول من يعرف عن أحدث المنتجات والعروض الخاصة</p>
-        <form>
-            <input type="email" placeholder="بريدك الإلكتروني">
-            <button type="submit">اشتراك</button>
-        </form>
-    </section>
-
-    <!-- التذييل -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>إكسسواراتك</h3>
-                <p>متجرك المفضل للإكسسوارات النسائية الفاخرة</p>
-            </div>
-            <div class="footer-section">
-                <h4>روابط سريعة</h4>
+            <nav>
                 <ul>
-                    <li><a href="#">عن المتجر</a></li>
-                    <li><a href="#">الشروط والأحكام</a></li>
-                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">المنتجات</a></li>
+                    <li><a href="#">العروض</a></li>
+                    <li><a href="#">من نحن</a></li>
                     <li><a href="#">اتصل بنا</a></li>
                 </ul>
+            </nav>
+
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
             </div>
-            <div class="footer-section">
-                <h4>وسائل التواصل</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-snapchat"></i></a>
+        </div>
+    </header>
+
+    <!-- الهيرو -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>أجمل الإكسسوارات لأناقتك</h1>
+            <p>اكتشفي أحدث مجموعاتنا من الإكسسوارات الحريمي التي تناسب جميع الأذواق</p>
+            <a href="#" class="btn">تسوق الآن</a>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section class="container">
+        <h2 class="section-title">منتجاتنا المميزة</h2>
+
+        <div class="products">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1617117816986-8ded70903534?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                    alt="سوار ذهبي" class="product-img">
+                <div class="product-content">
+                    <h3 class="product-title">سوار ذهبي أنيق</h3>
+                    <p class="product-price">120 ر.س</p>
+                    <a href="#" class="product-btn">أضف إلى السلة</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                    alt="قلادة لؤلؤ" class="product-img">
+                <div class="product-content">
+                    <h3 class="product-title">قلادة لؤلؤ طبيعي</h3>
+                    <p class="product-price">200 ر.س</p>
+                    <a href="#" class="product-btn">أضف إلى السلة</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ad5e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                    alt="أقراط الماس" class="product-img">
+                <div class="product-content">
+                    <h3 class="product-title">أقراط الماس براق</h3>
+                    <p class="product-price">180 ر.س</p>
+                    <a href="#" class="product-btn">أضف إلى السلة</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1506634572416-48cdfe530110?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                    alt="خاتم زفاف" class="product-img">
+                <div class="product-content">
+                    <h3 class="product-title">خاتم زفاف ملكي</h3>
+                    <p class="product-price">250 ر.س</p>
+                    <a href="#" class="product-btn">أضف إلى السلة</a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2023 إكسسواراتك. جميع الحقوق محفوظة</p>
+    </section>
+
+    <!-- قسم العروض والخصومات -->
+    <section class="offers">
+        <div class="container offers-content">
+            <h2>عروض خاصة محدودة الوقت</h2>
+            <p>احصلي على خصم يصل إلى 30% على مجموعة مختارة من الإكسسوارات الفاخرة.العرض ساري حتى نهاية الشهر</p>
+
+            <div class="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number">02</div>
+                    <div>أيام</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">12</div>
+                    <div>ساعات</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">45</div>
+                    <div>دقائق</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">30</div>
+                    <div>ثواني</div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">استفيدي من العرض</a>
+        </div>
+    </section>
+
+    <!-- قسم آراء العملاء -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">آراء عملائنا</h2>
+
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <p class="testimonial-text">المنتج جميل جداً وجودته عالية، شكراً لكم على الخدمة المميزة والتوصيل
+                        السريع.</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="سارة محمد"
+                            class="testimonial-img">
+                        <div>
+                            <div class="testimonial-name">سارة محمد</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">تجربة تسوق رائعة، الموقع سهل الاستخدام والمنتجات متنوعة وتناسب جميع
+                        الأذواق.</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="فاطمة أحمد"
+                            class="testimonial-img">
+                        <div>
+                            <div class="testimonial-name">فاطمة أحمد</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">الإكسسوارات التي اشتريتها كانت أجمل مما ظهر في الصور، شكراً لكم على
+                        الجودة العالية.</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="نورة السعدي"
+                            class="testimonial-img">
+                        <div>
+                            <div class="testimonial-name">نورة السعدi</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">تواصل معنا</h2>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>عنوان المتجر</h3>
+                            <p>حي الرياض، شارع الملك فهد، الرياض</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>الهاتف</h3>
+                            <p>+966 12 345 6789</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>البريد الإلكتروني</h3>
+                            <p>info@accessories.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="اسمك الكامل" required>
+                    <input type="email" placeholder="بريدك الإلكتروني" required>
+                    <input type="text" placeholder="الموضوع">
+                    <textarea placeholder="رسالتك" required></textarea>
+                    <button type="submit" class="btn">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h3>عن المتجر</h3>
+                    <ul>
+                        <li><a href="#">قصتنا</a></li>
+                        <li><a href="#">فريق العمل</a></li>
+                        <li><a href="#">وظائف</a></li>
+                        <li><a href="#">أخبار</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>خدمة العملاء</h3>
+                    <ul>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">سياسة الإرجاع</a></li>
+                        <li><a href="#">طرق الدفع</a></li>
+                        <li><a href="#">الشحن والتوصيل</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>روابط مهمة</h3>
+                    <ul>
+                        <li><a href="#">شروط الاستخدام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">خريطة الموقع</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+
+            <div class="copyright">
+                <p>© 2023 إكسسوارات. جميع الحقوق محفوظة</p>
+            </div>
         </div>
     </footer>
     <script src="./script.js"></script>

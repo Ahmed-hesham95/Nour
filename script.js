@@ -1,18 +1,17 @@
-// تفعيل قائمة الهاتف
-document.querySelector(".hamburger").addEventListener("click", function () {
-  document.querySelector(".mobile-menu").classList.add("active");
-  document.querySelector(".overlay").classList.add("active");
-  document.body.style.overflow = "hidden";
+// تفعيل القائمة على الهواتف
+document.querySelector(".nav-toggle").addEventListener("click", function () {
+  document.querySelector("nav").classList.toggle("active");
 });
 
-document.querySelector(".close-menu").addEventListener("click", function () {
-  document.querySelector(".mobile-menu").classList.remove("active");
-  document.querySelector(".overlay").classList.remove("active");
-  document.body.style.overflow = "auto";
-});
+// عد تنازلي للعروض (مثال بسيط)
+function updateCountdown() {
+  // يمكن تطوير هذا الجزء ليعمل بعد تنازلي حقيقي
+  const seconds = document.querySelector(
+    ".countdown-item:last-child .countdown-number"
+  );
+  let value = parseInt(seconds.textContent);
+  value = value === 0 ? 59 : value - 1;
+  seconds.textContent = value < 10 ? "0" + value : value;
+}
 
-document.querySelector(".overlay").addEventListener("click", function () {
-  document.querySelector(".mobile-menu").classList.remove("active");
-  document.querySelector(".overlay").classList.remove("active");
-  document.body.style.overflow = "auto";
-});
+setInterval(updateCountdown, 1000);
